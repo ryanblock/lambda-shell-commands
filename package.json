@@ -1,0 +1,27 @@
+{
+  "name": "lambda-shell-commands",
+  "version": "1.0.0",
+  "description": "AWS Lambda shell commands in $PATH available to runtime subprocesses",
+  "scripts": {
+    "start": "NODE_ENV=testing npx sandbox"
+  },
+  "keywords": [
+    "Amazon",
+    "AWS Lambda",
+    "AWS",
+    "cloud functions",
+    "Cloud",
+    "Lambda",
+    "serverless"
+  ],
+  "author": "Ryan Block <hello@ryanblock.com>",
+  "license": "Apache-2.0",
+  "homepage": "https://github.com/ryanblock/lambda-shell-commands",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ryanblock/lambda-shell-commands.git"
+  },
+  "devDependencies": {
+    "@architect/architect": "^5.5.1"
+  }
+}

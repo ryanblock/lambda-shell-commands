@@ -1,0 +1,8 @@
+{
+  "name": "lambda-cmd-get-index",
+  "dependencies": {
+    "@architect/data": "^2.0.14",
+    "@architect/functions": "^2.0.5",
+    "tiny-json-http": "^7.0.2"
+  }
+}
