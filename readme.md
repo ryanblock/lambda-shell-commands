@@ -1,15 +1,15 @@
 # AWS Lambda shell commands
-### Last updated: 2019-02-09T23:09:55.046Z, [skip to the command list ↓](#available-aws-lambda-shell-commands-shortcuts-and-syntax)
+### Last updated: 2019-02-12T17:46:23.978Z, [skip to the command list ↓](#available-aws-lambda-shell-commands-shortcuts-and-syntax)
 
 ## How Lambda works
 
-AWS Lambda is a full Linux microcontainer that boots up in milliseconds, on-demand, and bills in increments of 100ms.
+AWS Lambda is a full Linux microcontainer that boots up on-demand in milliseconds, billing in 100ms increments.
 
-Lambda is primarily used for running the business logic you feed one of its [supported runtimes](https://docs.aws.amazon.com/lambda/latest/dg/lambda-runtimes.html) (or your [custom runtime](https://docs.aws.amazon.com/lambda/latest/dg/runtimes-custom.html), if you're into that!).
+Lambda is primarily used for running whatever business logic you feed one of its [supported runtimes](https://docs.aws.amazon.com/lambda/latest/dg/lambda-runtimes.html) (or the [custom runtime](https://docs.aws.amazon.com/lambda/latest/dg/runtimes-custom.html) of your choosing, if you're into that!).
 
-However, it's not unusual to need to shell out for some kinds of work – after all, UNIX is pretty powerful! 🏋🏽‍♀️
+As in any application, it's not unusual to need to shell out for some kinds of operations – after all, UNIX is pretty powerful! 🏋🏽‍♀️
 
-Fortunately, every Lambda (which runs a lightweight AWS AMI) come equipped with a full complement of common Linux shell commands.
+Fortunately, Lambdas – which run a lightweight AWS AMI – come equipped with a full complement of common Linux shell commands.
 
 
 ### Helpful notes
@@ -20,12 +20,12 @@ Fortunately, every Lambda (which runs a lightweight AWS AMI) come equipped with 
   - `/var/task` - Your default cwd (and where your code is located)
   - `/tmp` - A nice place to perform local operations
 - ⚠️ Security warning: If dealing with any potentially sensitive data on the Lambda filesystem, **be sure to destroy those files before completing your application's execution**.
-  - Lambda microcontainers are kept warm and recycled across processes, and you really don't leave open the possibility of leaking data across executions – statelessness is a feature!
+  - Your Lambda microcontainers are kept warm and recycled across processes, so you really don't leave open the possibility of leaking data across executions – statelessness is a feature!
 
 
 ### Build your own Lambda-based application
 
-Partially self-serving plug: this project is built with [Architect](https://arc.codes), an open source serverless framework created and maintained by the company I cofounded: [Begin](https://begin.com), an open source-centric serverless app platform, created to help people like you build the fast, durable, scalable, affordable, maintainable, serverless software of the future.
+Partially self-serving plug: this here project is built with [Architect](https://arc.codes), an open source serverless framework created and maintained by the company I cofounded: [Begin](https://begin.com), an open source-centric serverless app platform, created to help people like you build the fast, durable, scalable, affordable, maintainable, serverless software of the future.
 
 
 ## Available AWS Lambda shell commands, shortcuts, and syntax
