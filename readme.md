@@ -1,5 +1,5 @@
 # AWS Lambda shell commands
-### Last updated: 2019-02-12T17:46:23.978Z, [skip to the command list ↓](#available-aws-lambda-shell-commands-shortcuts-and-syntax)
+### Last updated: 2019-03-12T18:53:30.386Z, [skip to the command list ↓](#available-aws-lambda-shell-commands-shortcuts-and-syntax)
 
 ## How Lambda works
 
@@ -34,7 +34,6 @@ Partially self-serving plug: this here project is built with [Architect](https:/
 - `.`
 - `:`
 - `[`
-- `[`
 - `[[`
 - `]]`
 - `a2p`
@@ -45,7 +44,6 @@ Partially self-serving plug: this here project is built with [Architect](https:/
 - `arch`
 - `as`
 - `aserver`
-- `awk`
 - `awk`
 - `base64`
 - `basename`
@@ -119,7 +117,6 @@ Partially self-serving plug: this here project is built with [Architect](https:/
 - `csplit`
 - `curl`
 - `cut`
-- `cut`
 - `dash`
 - `date`
 - `db_archive`
@@ -159,14 +156,12 @@ Partially self-serving plug: this here project is built with [Architect](https:/
 - `dvipdf`
 - `dwp`
 - `echo`
-- `echo`
 - `egrep`
 - `eject`
 - `elfedit`
 - `elif`
 - `else`
 - `enable`
-- `env`
 - `env`
 - `eps2eps`
 - `eqn`
@@ -195,7 +190,6 @@ Partially self-serving plug: this here project is built with [Architect](https:/
 - `factor`
 - `fallocate`
 - `false`
-- `false`
 - `fax2ps`
 - `fax2tiff`
 - `fc`
@@ -211,7 +205,6 @@ Partially self-serving plug: this here project is built with [Architect](https:/
 - `fi`
 - `file`
 - `find`
-- `find`
 - `find-jar`
 - `find2perl`
 - `findmnt`
@@ -224,7 +217,6 @@ Partially self-serving plug: this here project is built with [Architect](https:/
 - `free`
 - `function`
 - `funzip`
-- `gawk`
 - `gawk`
 - `gcore`
 - `gdb`
@@ -279,9 +271,7 @@ Partially self-serving plug: this here project is built with [Architect](https:/
 - `gtbl`
 - `gtroff`
 - `gunzip`
-- `gunzip`
 - `gzexe`
-- `gzip`
 - `gzip`
 - `h2ph`
 - `hash`
@@ -326,8 +316,6 @@ Partially self-serving plug: this here project is built with [Architect](https:/
 - `keytool`
 - `keytool7`
 - `keytool8`
-- `kill`
-- `kill`
 - `kill`
 - `killall`
 - `kmod`
@@ -383,7 +371,6 @@ Partially self-serving plug: this here project is built with [Architect](https:/
 - `montage`
 - `more`
 - `mountpoint`
-- `mountpoint`
 - `mv`
 - `namei`
 - `neqn`
@@ -392,7 +379,6 @@ Partially self-serving plug: this here project is built with [Architect](https:/
 - `nisdomainname`
 - `nl`
 - `nm`
-- `node`
 - `node`
 - `nohup`
 - `npm`
@@ -461,7 +447,6 @@ Partially self-serving plug: this here project is built with [Architect](https:/
 - `printafm`
 - `printenv`
 - `printf`
-- `printf`
 - `prlimit`
 - `prtstat`
 - `ps`
@@ -487,7 +472,6 @@ Partially self-serving plug: this here project is built with [Architect](https:/
 - `pushd`
 - `pv.sh`
 - `pwd`
-- `pwd`
 - `pwdx`
 - `pwmake`
 - `pwscore`
@@ -512,7 +496,6 @@ Partially self-serving plug: this here project is built with [Architect](https:/
 - `read`
 - `readarray`
 - `readelf`
-- `readlink`
 - `readlink`
 - `readonly`
 - `realpath`
@@ -613,7 +596,6 @@ Partially self-serving plug: this here project is built with [Architect](https:/
 - `tbl`
 - `tee`
 - `test`
-- `test`
 - `then`
 - `thumbnail`
 - `tic`
@@ -646,7 +628,6 @@ Partially self-serving plug: this here project is built with [Architect](https:/
 - `tracepath6`
 - `trap`
 - `troff`
-- `true`
 - `true`
 - `truncate`
 - `tset`
@@ -720,7 +701,6 @@ Partially self-serving plug: this here project is built with [Architect](https:/
 - `yes`
 - `ypdomainname`
 - `yum`
-- `zcat`
 - `zcat`
 - `zcmp`
 - `zdiff`

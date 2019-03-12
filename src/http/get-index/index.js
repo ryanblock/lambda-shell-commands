@@ -27,9 +27,10 @@ exports.handler = async function http() {
   }
 
   // Prep results
-  result.body.shift()
-  result.body.map((cmd,i) => {
-    result.body[i] = '- `' + cmd + '`'
+  let results = Array.from(new Set(result.body))
+  results.shift()
+  results.map((cmd,i) => {
+    results[i] = '- `' + cmd + '`'
   })
 
   // Intended for local dev!
@@ -37,7 +38,7 @@ exports.handler = async function http() {
   let readme = fs.readFileSync(template).toString()
   let date = new Date(Date.now()).toISOString()
   let dated = readme.replace('LAST_UPDATED', date)
-  let final = dated.replace('SHELL_COMMANDS', result.body.join('\n'))
+  let final = dated.replace('SHELL_COMMANDS', results.join('\n'))
   fs.writeFileSync(path.join(cwd, '..', '..', '..', 'readme.md'), final)
   return {
     type: 'text/html; charset=utf8',
