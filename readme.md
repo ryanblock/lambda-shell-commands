@@ -1,5 +1,5 @@
 # AWS Lambda shell commands
-### Last updated: 2019-05-16T20:59:58.406Z, [skip to the command list ↓](#available-aws-lambda-shell-commands-shortcuts-and-syntax)
+### Last updated: 2019-05-16T21:06:03.999Z, [skip to the command list ↓](#lambdas-running-aws-linux-2-nodejs10x)
 
 ## How Lambda works
 
@@ -31,7 +31,7 @@ Partially self-serving plug: this here project is built with [Architect](https:/
 ## Lambdas running AWS Linux 2 (`nodejs10.x`)
 ### Available AWS Lambda shell commands, shortcuts, and syntax
 
-> ##### Or skip to [Lambdas running AMI 2018.03 (all others, as of June 2019)](#lambdas-running-ami-2018-03-all-others-as-of-june-2019)
+> ##### Or skip to [Lambdas running AMI 2018.03 (all others, as of June 2019)](#lambdas-running-ami-201803-all-others-as-of-june-2019)
 
 - `!`
 - `.`
