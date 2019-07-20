@@ -1,7 +1,0 @@
-{
-  "name": "lambda-cmd-get-aws_linux_2",
-  "dependencies": {
-    "@architect/data": "^2.0.17",
-    "@architect/functions": "^3.0.7"
-  }
-}

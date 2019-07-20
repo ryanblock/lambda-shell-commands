@@ -1,7 +1,0 @@
-{
-  "name": "lambda-cmd-get-ami_2018_03",
-  "dependencies": {
-    "@architect/data": "^2.0.17",
-    "@architect/functions": "^3.0.7"
-  }
-}

@@ -22,6 +22,6 @@
     "url": "https://github.com/ryanblock/lambda-shell-commands.git"
   },
   "devDependencies": {
-    "@architect/architect": "^5.8.6"
+    "@architect/architect": "^5.9.22"
   }
 }
