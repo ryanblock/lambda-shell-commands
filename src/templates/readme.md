@@ -28,6 +28,16 @@ Fortunately, Lambdas – which run a lightweight AWS AMI – come equipped with 
 Partially self-serving plug: this here project is built with [Architect](https://arc.codes), an open source serverless framework created and maintained by the company I cofounded: [Begin](https://begin.com), an open source-centric serverless app platform, created to help people like you build the fast, durable, scalable, affordable, maintainable, serverless software of the future.
 
 
+$LINKS
+
+
+
+
+
+
+
+
+
 ## Lambdas running AWS Linux 2 (`nodejs10.x`)
 ### Available AWS Lambda shell commands, shortcuts, and syntax
 
