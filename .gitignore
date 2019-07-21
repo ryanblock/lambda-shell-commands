@@ -1,2 +1,4 @@
+__pycache__
 .arc-env
 .DS_Store
+vendor/

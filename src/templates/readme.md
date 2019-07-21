@@ -1,5 +1,10 @@
 # AWS Lambda shell commands
-### Last updated: LAST_UPDATED, [skip to the command list ↓](#lambdas-running-aws-linux-2-nodejs10x)
+### Last updated: $LAST_UPDATED
+
+## Shell command lists by Lambda runtime
+
+$LINKS
+
 
 ## How Lambda works
 
@@ -14,45 +19,18 @@ Fortunately, Lambdas – which run a lightweight AWS AMI – come equipped with 
 
 ### Helpful notes
 
-- AWS [pre-installs the AWS SDK in all JS and Python Lambdas](https://docs.aws.amazon.com/lambda/latest/dg/current-supported-versions.html), so you don't need to include it in your application's dependencies!
+- AWS [pre-installs the AWS SDK in its Lambdas](https://docs.aws.amazon.com/lambda/latest/dg/current-supported-versions.html), so don't include it in your application's dependencies!
   - In fact, doing so will only slow down your Lambda's startup times, so don't do that.
 - Important local paths
   - `/var/task` - Your default cwd (and where your code is located)
   - `/tmp` - A nice place to perform local operations
-- ⚠️ Security warning: If dealing with any potentially sensitive data on the Lambda filesystem, **be sure to destroy those files before completing your application's execution**.
-  - Your Lambda microcontainers are kept warm and recycled across processes, so you really don't leave open the possibility of leaking data across executions – statelessness is a feature!
+- ⚠️ Security warning: If dealing with any potentially sensitive data on the Lambda filesystem, **always be sure to destroy those files before ending each execution**.
+  - Lambda microcontainers are kept warm and recycled across your invocations. Not cleaning up after temp files leaves open the possibility of leaking data across executions – statelessness is a feature!
 
 
 ### Build your own Lambda-based application
 
 Partially self-serving plug: this here project is built with [Architect](https://arc.codes), an open source serverless framework created and maintained by the company I cofounded: [Begin](https://begin.com), an open source-centric serverless app platform, created to help people like you build the fast, durable, scalable, affordable, maintainable, serverless software of the future.
-
-
-$LINKS
-
-
-
-
-
-
-
-
-
-## Lambdas running AWS Linux 2 (`nodejs10.x`)
-### Available AWS Lambda shell commands, shortcuts, and syntax
-
-> ##### Or skip to [Lambdas running AMI 2018.03 (all others, as of June 2019)](#lambdas-running-ami-201803-all-others-as-of-june-2019)
-
-$AWS_LINUX_2_SHELL_COMMANDS
-
-
----
-
-
-## Lambdas running AMI 2018.03 (all others, as of June 2019)
-### Available AWS Lambda shell commands, shortcuts, and syntax
-
-$AMI_2018_03_SHELL_COMMANDS
 
 
 ## Credits
