@@ -1,13 +1,13 @@
 # AWS Lambda shell commands
-### Last updated: 2019-07-22T15:24:16.747Z
+### Last updated: 2019-07-22T15:34:35.379Z
 
 
 ## Shell command lists by Lambda runtime
 
-### [nodejs10.x](./_nodejs10.x.md)
-### [nodejs8.10](./_nodejs8.10.md)
-### [python3.7](./_python3.7.md)
-### [python3.6](./_python3.6.md)
+### → [`nodejs10.x`](./_nodejs10.x.md)
+### → [`nodejs8.10`](./_nodejs8.10.md)
+### → [`python3.7`](./_python3.7.md)
+### → [`python3.6`](./_python3.6.md)
 
 
 ## How Lambda works

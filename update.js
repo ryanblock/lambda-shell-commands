@@ -63,7 +63,7 @@ async function update() {
 
   // Update readme
   let tmpl = template('readme')
-  let links = runtimes.map(r => `### [${r}](./_${r}.md)`).join('\n')
+  let links = runtimes.map(r => `### → [\`${r}\`](./_${r}.md)`).join('\n')
   let file = tmpl.replace('$LAST_UPDATED', date)
   .replace('$LINKS', links)
   let filename = path.join(cwd, 'readme.md')
