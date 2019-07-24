@@ -26,7 +26,8 @@ try {
   let config = process.env.ARC_LOCAL
     ? `echo 'Not reconfiguring git' &&`
     : `git config user.email "${email}" &&\n` +
-      `git config user.name "${name}" &&`
+      `git config user.name "${name}" &&\n` +
+      `git config github.user "${name}"`
 
   let cmd = `git --version &&
   ${config}
