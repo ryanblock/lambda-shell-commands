@@ -27,8 +27,6 @@ try {
     `git commit -m '${msg}' &&\n` +
     `git push https ${day}`
     exec(cmd)
-    let commit = exec(cmd)
-    console.log('Commit result:', commit)
 
     let gh = github({
       auth,
