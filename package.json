@@ -22,7 +22,7 @@
     "url": "https://github.com/ryanblock/lambda-shell-commands.git"
   },
   "dependencies": {
-    "@architect/architect": "^5.9.22",
+    "@architect/architect": "^5.9.23",
     "tiny-json-http": "^7.1.2"
   }
 }
