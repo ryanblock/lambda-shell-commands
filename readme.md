@@ -1,5 +1,5 @@
 # AWS Lambda shell commands
-### Last updated: 2019-07-22T15:34:35.379Z
+### Last updated: 2019-07-24T00:59:52.262Z
 
 
 ## Shell command lists by Lambda runtime
@@ -8,6 +8,7 @@
 ### → [`nodejs8.10`](./_nodejs8.10.md)
 ### → [`python3.7`](./_python3.7.md)
 ### → [`python3.6`](./_python3.6.md)
+### → [`ruby2.5`](./_ruby2.5.md)
 
 
 ## How Lambda works
