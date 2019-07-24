@@ -8,14 +8,13 @@ let sandbox = require('@architect/architect').sandbox.start
 let tiny = require('tiny-json-http')
 
 async function update() {
-  // Run locally
-  //   sandbox starts, but using it is optional!
+  // Ensure you have valid process.env.ENDPOINT pointing to a live Lambda
+  if (!process.env.ENDPOINT || !process.env.AWS_REGION) throw ReferenceError('Missing env vars')
+
+  // Run locally, start sandbox if needed
   let local = process.env.ARC_LOCAL
   let close
-  if (local) close = await sandbox()
-
-  // To run locally, ensure you have valid process.env.ENDPOINT pointing to a live Lambda
-  if (!process.env.ENDPOINT || !process.env.AWS_REGION) throw ReferenceError('Missing env vars')
+  if (local && process.env.ENDPOINT.includes('localhost')) close = await sandbox()
 
   console.log('Pulling results from:', process.env.ENDPOINT)
 
@@ -72,7 +71,7 @@ async function update() {
   console.log(`Successfully updated ${filename.replace(process.cwd(), '')}`)
 
   // Close the local server
-  if (local) close()
+  if (close) close()
   console.log('Done!')
 }
 
