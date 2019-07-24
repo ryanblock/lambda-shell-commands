@@ -22,7 +22,7 @@ try {
   let day = now.split('T')[0]
 
   async function run () {
-    let msg = `Lambda command update: ${now}`
+    let msg = `Lambda shell commands update: ${now}`
     let cmd = `git add -A &&\n` +
     `git commit -m '${msg}' &&\n` +
     `git push https ${day}`
