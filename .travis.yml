@@ -6,7 +6,7 @@ branches:
   - master
 before_install:
   - |
-      if ! git diff --name-only $TRAVIS_COMMIT_RANGE | grep -qvE '(.md$)|(.json$)'
+      if ! git log -1 --stat --format="%s %b" | grep -qvE '(Lambda shell commands update:)'
       then
         echo "Docs update or merge, skipping build"
         exit
