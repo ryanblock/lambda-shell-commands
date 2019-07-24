@@ -1,5 +1,5 @@
 # AWS Lambda shell commands for `ruby2.5` runtime
-### Last updated: 2019-07-24T04:40:43.880Z from `us-west-1`
+### Last updated: 2019-07-24T04:42:03.049Z from `us-west-1`
 
 ## Available AWS Lambda shell commands, shortcuts, and syntax
 
