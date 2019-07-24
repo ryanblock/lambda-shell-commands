@@ -1,23 +1,23 @@
 #!/usr/bin/env node
 
+// eslint-disable-next-line
+if (process.env.ARC_LOCAL) require('dotenv').config()
 let fs = require('fs')
 let path = require('path')
 let sandbox = require('@architect/architect').sandbox.start
 let tiny = require('tiny-json-http')
-process.env.NODE_ENV = process.env.NODE_ENV || 'testing'
 
 async function update() {
-  // Local / testing
-  let local = process.env.NODE_ENV === 'testing' || process.env.ARC_LOCAL
+  // Run locally
+  //   sandbox starts, but using it is optional!
+  let local = process.env.ARC_LOCAL
   let close
-  if (local) {
-    process.env.ENDPOINT = 'http://localhost:3333'
-    process.env.AWS_REGION = 'whatev'
-    close = await sandbox()
-  }
+  if (local) close = await sandbox()
 
   // To run locally, ensure you have valid process.env.ENDPOINT pointing to a live Lambda
   if (!process.env.ENDPOINT || !process.env.AWS_REGION) throw ReferenceError('Missing env vars')
+
+  console.log('Pulling results from:', process.env.ENDPOINT)
 
   let start = Date.now()
   let date = new Date(start).toISOString()
