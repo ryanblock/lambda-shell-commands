@@ -3,7 +3,11 @@
   "version": "1.0.0",
   "description": "AWS Lambda shell commands in $PATH available to runtime subprocesses",
   "scripts": {
-    "start": "NODE_ENV=testing npx sandbox"
+    "start": "NODE_ENV=testing npx sandbox",
+    "before": "scripts/before.js",
+    "update": "scripts/update.js",
+    "after": "scripts/after.js",
+    "go": "npm run before && npm run update && npm run after"
   },
   "keywords": [
     "Amazon",
@@ -23,6 +27,10 @@
   },
   "dependencies": {
     "@architect/architect": "^5.9.23",
+    "@octokit/rest": "^16.28.6",
     "tiny-json-http": "^7.1.2"
+  },
+  "devDependencies": {
+    "dotenv": "^8.0.0"
   }
 }
