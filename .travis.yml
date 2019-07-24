@@ -1,0 +1,9 @@
+language: node_js
+node_js:
+  - "10.15"
+install:
+  - npm i
+script:
+  - npm test
+  - npm run go
+# - npx deploy # TODO add this step soon

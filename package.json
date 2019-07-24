@@ -3,6 +3,8 @@
   "version": "1.0.0",
   "description": "AWS Lambda shell commands in $PATH available to runtime subprocesses",
   "scripts": {
+    "lint": "eslint . --fix",
+    "test": "npm run lint",
     "start": "NODE_ENV=testing npx sandbox",
     "before": "scripts/before.js",
     "update": "scripts/update.js",
