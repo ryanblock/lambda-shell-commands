@@ -20,5 +20,5 @@ install:
   - npm i
 script:
   - npm test
-# - npm run go
+  - npm run go
 # - npx deploy # TODO add this step soon
