@@ -1,5 +1,5 @@
 # AWS Lambda shell commands for `python3.6` runtime
-### Last updated: 2019-08-07T19:43:57.990Z from `us-west-1`
+### Last updated: 2019-08-21T19:42:17.410Z from `us-west-1`
 
 ## Available AWS Lambda shell commands, shortcuts, and syntax
 
@@ -9,6 +9,7 @@
 - `[`
 - `[[`
 - `]]`
+- `a2p`
 - `addr2line`
 - `alias`
 - `animate`
@@ -42,6 +43,7 @@
 - `bzless`
 - `bzmore`
 - `c++filt`
+- `c2ph`
 - `ca-legacy`
 - `cairo-sphinx`
 - `cal`
@@ -62,6 +64,7 @@
 - `cksum`
 - `clean-binary-files`
 - `clear`
+- `cmp`
 - `cmsutil`
 - `col`
 - `colcrt`
@@ -102,7 +105,9 @@
 - `dd`
 - `declare`
 - `df`
+- `diff`
 - `diff-jars`
+- `diff3`
 - `dir`
 - `dircolors`
 - `dirname`
@@ -124,6 +129,7 @@
 - `else`
 - `enable`
 - `env`
+- `eqn`
 - `esac`
 - `eval`
 - `exec`
@@ -149,6 +155,7 @@
 - `file`
 - `find`
 - `find-jar`
+- `find2perl`
 - `findmnt`
 - `flock`
 - `fmt`
@@ -161,6 +168,7 @@
 - `gawk`
 - `gdbus`
 - `gencat`
+- `geqn`
 - `getconf`
 - `getent`
 - `getopt`
@@ -169,6 +177,8 @@
 - `gio-querymodules-64`
 - `glib-compile-schemas`
 - `gmake`
+- `gneqn`
+- `gnroff`
 - `gpg`
 - `gpg-agent`
 - `gpg-connect-agent`
@@ -182,14 +192,22 @@
 - `gpgsplit2`
 - `gpgv`
 - `gpgv2`
+- `gpic`
 - `gprof`
 - `grep`
+- `groff`
+- `grops`
+- `grotty`
 - `groups`
 - `gsettings`
+- `gsoelim`
 - `gtar`
+- `gtbl`
+- `gtroff`
 - `gunzip`
 - `gzexe`
 - `gzip`
+- `h2ph`
 - `hash`
 - `head`
 - `help`
@@ -274,11 +292,13 @@
 - `mountpoint`
 - `mv`
 - `namei`
+- `neqn`
 - `nice`
 - `nl`
 - `nm`
 - `nohup`
 - `nproc`
+- `nroff`
 - `nsenter`
 - `numfmt`
 - `objcopy`
@@ -296,8 +316,15 @@
 - `patch`
 - `pathchk`
 - `peekfd`
+- `perl`
+- `perl5.16.3`
+- `perlbug`
+- `perldoc`
+- `perlthanks`
 - `pgawk`
 - `pgrep`
+- `pic`
+- `piconv`
 - `pinentry`
 - `pinentry-curses`
 - `pinky`
@@ -308,20 +335,30 @@
 - `pk12util`
 - `pkg-config`
 - `pkill`
+- `pl2pm`
 - `pldd`
 - `pmap`
+- `pod2html`
+- `pod2man`
+- `pod2text`
+- `pod2usage`
 - `policytool`
 - `policytool8`
 - `popd`
+- `post-grohtml`
 - `ppm2tiff`
 - `pr`
+- `pre-grohtml`
+- `preconv`
 - `printenv`
 - `printf`
 - `prlimit`
 - `prtstat`
 - `ps`
+- `psed`
 - `pstree`
 - `pstree.x11`
+- `pstruct`
 - `ptx`
 - `pushd`
 - `pwd`
@@ -380,11 +417,13 @@
 - `rpmquery`
 - `rpmverify`
 - `runcon`
+- `s2p`
 - `script`
 - `scriptreplay`
 - `sctp_darn`
 - `sctp_status`
 - `sctp_test`
+- `sdiff`
 - `sed`
 - `select`
 - `seq`
@@ -414,9 +453,11 @@
 - `slabtop`
 - `sleep`
 - `snice`
+- `soelim`
 - `sort`
 - `sotruss`
 - `source`
+- `splain`
 - `split`
 - `sprof`
 - `sqlite3`
@@ -436,6 +477,7 @@
 - `tailf`
 - `tar`
 - `taskset`
+- `tbl`
 - `tee`
 - `test`
 - `then`
@@ -466,6 +508,7 @@
 - `tput`
 - `tr`
 - `trap`
+- `troff`
 - `true`
 - `truncate`
 - `tset`
@@ -544,5 +587,6 @@
 - `zless`
 - `zmore`
 - `znew`
+- `zsoelim`
 - `{`
 - `}`
