@@ -1,5 +1,5 @@
 # AWS Lambda shell commands for `ruby2.5` runtime
-### Last updated: 2019-09-11T19:43:51.618Z from `us-west-1`
+### Last updated: 2019-10-15T16:36:46.950Z from `us-west-1`
 
 ## Available AWS Lambda shell commands, shortcuts, and syntax
 
@@ -59,6 +59,7 @@
 - `check-binary-files`
 - `checksctp`
 - `chgrp`
+- `chmem`
 - `chmod`
 - `chown`
 - `chrt`
@@ -274,6 +275,7 @@
 - `lsipc`
 - `lslocks`
 - `lslogins`
+- `lsmem`
 - `lsns`
 - `lua`
 - `luac`
