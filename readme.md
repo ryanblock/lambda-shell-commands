@@ -1,5 +1,5 @@
 # AWS Lambda shell commands
-### Last updated: 2019-12-18T21:12:05.036Z
+### Last updated: 2020-01-18T21:12:29.298Z
 
 
 ## Shell command lists by Lambda runtime
