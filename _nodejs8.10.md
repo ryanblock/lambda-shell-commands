@@ -1,5 +1,5 @@
 # AWS Lambda shell commands for `nodejs8.10` runtime
-### Last updated: 2019-12-18T21:12:05.036Z from `us-west-1`
+### Last updated: 2020-01-18T21:12:29.298Z from `us-west-1`
 
 ## Available AWS Lambda shell commands, shortcuts, and syntax
 
@@ -218,7 +218,6 @@
 - `iconv`
 - `id`
 - `identify`
-- `idn2`
 - `if`
 - `igawk`
 - `import`
