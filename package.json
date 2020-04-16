@@ -30,7 +30,7 @@
   },
   "dependencies": {
     "@architect/architect": "^5.9.23",
-    "@octokit/rest": "^16.34.1",
+    "@octokit/rest": "^17.3.0",
     "tiny-json-http": "^7.1.2"
   },
   "devDependencies": {
