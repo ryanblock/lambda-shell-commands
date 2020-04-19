@@ -1,5 +1,5 @@
 # AWS Lambda shell commands for `nodejs8.10` runtime
-### Last updated: 2020-04-01T14:08:32.435Z from `us-west-1`
+### Last updated: 2020-04-18T21:13:59.621Z from `us-west-1`
 
 ## Available AWS Lambda shell commands, shortcuts, and syntax
 
@@ -303,6 +303,7 @@
 - `npx`
 - `nroff`
 - `nsenter`
+- `nss-policy-check`
 - `numfmt`
 - `objcopy`
 - `objdump`
@@ -440,7 +441,6 @@
 - `shopt`
 - `shred`
 - `shuf`
-- `signtool`
 - `signver`
 - `size`
 - `skill`
