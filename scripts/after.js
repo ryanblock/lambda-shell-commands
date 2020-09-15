@@ -2,9 +2,9 @@
 
 // eslint-disable-next-line
 if (process.env.ARC_LOCAL) require('dotenv').config()
-let exec = require('child_process').execSync
+let { execSync: exec } = require('child_process')
+let { version: ver } = require('../package.json')
 let github = require('@octokit/rest')
-let ver = require('../package.json').version
 
 try {
   /**
