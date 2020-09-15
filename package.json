@@ -9,8 +9,8 @@
     "before": "scripts/before.js",
     "update": "scripts/update.js",
     "after": "scripts/after.js",
-    "go": "npm run before && npm run update && npm run after",
-    "go:local": "ARC_LOCAL=true npm run go"
+    "publish": "npm run before && npm run update && npm run after",
+    "publish:local": "ARC_LOCAL=true npm run publish"
   },
   "keywords": [
     "Amazon",
