@@ -1,6 +1,10 @@
 @app
 lambda-cmd
 
+@aws
+region us-west-1
+profile personal
+
 @http
 get /nodejs10.x     # API: Lambda shell commands on AWS Linux 2 / Node 10
 get /nodejs8.10     # API: Lambda shell commands on AWS Linux / Node 8
