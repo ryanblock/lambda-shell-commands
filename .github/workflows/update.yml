@@ -3,7 +3,7 @@ name: Node CI
 # Push tests pushes; PR tests merges
 on:
   schedule:
-    - cron: '0 * * * 1'
+    - cron: '0 * * * 3'
 
 defaults:
   run:
