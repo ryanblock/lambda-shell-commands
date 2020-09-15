@@ -2,7 +2,7 @@
 
 // eslint-disable-next-line
 if (process.env.ARC_LOCAL) require('dotenv').config()
-let fs = require('fs')
+let { readFileSync, writeFileSync } = require('fs')
 let path = require('path')
 let sandbox = require('@architect/architect').sandbox.start
 let tiny = require('tiny-json-http')
@@ -24,7 +24,7 @@ async function update () {
   let endpoint = runtime => `${process.env.ENDPOINT}/${runtime}`
   let template = name => {
     let file = path.join(cwd, 'src', 'templates', `${name}.md`)
-    let template = fs.readFileSync(file).toString()
+    let template = readFileSync(file).toString()
     return template
   }
   let runtimes = [
@@ -60,7 +60,7 @@ async function update () {
       .replace('$AWS_REGION', process.env.AWS_REGION)
       .replace(`$SHELL_COMMANDS`, results)
     let filename = path.join(cwd, `_${runtime}.md`)
-    fs.writeFileSync(filename, file)
+    writeFileSync(filename, file)
     console.log(`Successfully updated ${filename.replace(process.cwd(), '')}`)
   }
 
@@ -71,7 +71,7 @@ async function update () {
     .replace('$LAST_UPDATED', date)
     .replace('$LINKS', links)
   let filename = path.join(cwd, 'readme.md')
-  fs.writeFileSync(filename, file)
+  writeFileSync(filename, file)
   console.log(`Successfully updated ${filename.replace(process.cwd(), '')}`)
 
   // Close the local server
