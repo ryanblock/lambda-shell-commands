@@ -38,7 +38,7 @@ try {
     })
     let title = msg
     let head = refs.data.find(r => r.ref.startsWith(`refs/heads/${day}`))
-    head = head.ref.replace('refs/heads/','')
+    head = head.ref.replace('refs/heads/', '')
     let base = 'master'
 
     let pull = await gh.pulls.create({
@@ -52,6 +52,6 @@ try {
   }
   run()
 }
-catch(err) {
+catch (err) {
   console.log(err)
 }

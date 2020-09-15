@@ -7,7 +7,7 @@ let path = require('path')
 let sandbox = require('@architect/architect').sandbox.start
 let tiny = require('tiny-json-http')
 
-async function update() {
+async function update () {
   // Ensure you have valid process.env.ENDPOINT pointing to a live Lambda
   if (!process.env.ENDPOINT || !process.env.AWS_REGION) throw ReferenceError('Missing env vars')
 
@@ -36,7 +36,7 @@ async function update() {
   ]
   for (let runtime of runtimes) {
     let url = endpoint(runtime)
-    let response = await tiny.get({url})
+    let response = await tiny.get({ url })
     console.log(`Got response for ${runtime}, parsing...`)
     parse(response, runtime)
   }
@@ -45,17 +45,18 @@ async function update() {
     // Parse results
     let results = Array.from(new Set(response.body))
     if (results[0] === '') results.shift()
-    results.sort().map((cmd,i) => {
+    results.sort().map((cmd, i) => {
       results[i] = '- `' + cmd + '`'
     })
     results = results.join('\n')
 
     // Write each
     let tmpl = template('results')
-    let file = tmpl.replace('$RUNTIME', runtime)
-                   .replace('$LAST_UPDATED', date)
-                   .replace('$AWS_REGION', process.env.AWS_REGION)
-                   .replace(`$SHELL_COMMANDS`, results)
+    let file = tmpl
+      .replace('$RUNTIME', runtime)
+      .replace('$LAST_UPDATED', date)
+      .replace('$AWS_REGION', process.env.AWS_REGION)
+      .replace(`$SHELL_COMMANDS`, results)
     let filename = path.join(cwd, `_${runtime}.md`)
     fs.writeFileSync(filename, file)
     console.log(`Successfully updated ${filename.replace(process.cwd(), '')}`)
@@ -64,8 +65,9 @@ async function update() {
   // Update readme
   let tmpl = template('readme')
   let links = runtimes.map(r => `### → [\`${r}\`](./_${r}.md)`).join('\n')
-  let file = tmpl.replace('$LAST_UPDATED', date)
-  .replace('$LINKS', links)
+  let file = tmpl
+    .replace('$LAST_UPDATED', date)
+    .replace('$LINKS', links)
   let filename = path.join(cwd, 'readme.md')
   fs.writeFileSync(filename, file)
   console.log(`Successfully updated ${filename.replace(process.cwd(), '')}`)
