@@ -7,6 +7,4 @@ def handler(request, context):
   result = os.popen(command).read()
   result = re.split('\n', result)
   result.sort()
-  headers = {'content-type': 'application/json; charset=utf8'}
-  body = json.dumps(result)
-  return {'statusCode': 200, 'headers': headers, 'body': body}
+  return result
