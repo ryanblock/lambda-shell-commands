@@ -46,3 +46,6 @@ jobs:
 
     - name: Publish
       run: npm run publish
+      env:
+        ENDPOINT: ${{ secrets.ENDPOINT }}
+        AWS_REGION: ${{ secrets.AWS_REGION }}
