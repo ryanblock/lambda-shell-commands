@@ -1,5 +1,5 @@
 # AWS Lambda shell commands for `python3.7` runtime
-### Last updated: 2020-08-18T21:16:27.394Z from `us-west-1`
+### Last updated: 2020-10-07T02:59:09.477Z from `us-west-1`
 
 ## Available AWS Lambda shell commands, shortcuts, and syntax
 
