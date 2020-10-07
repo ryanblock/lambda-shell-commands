@@ -4,7 +4,7 @@
 if (process.env.ARC_LOCAL) require('dotenv').config()
 let { readFileSync, writeFileSync } = require('fs')
 let path = require('path')
-let sandbox = require('@architect/architect').sandbox.start
+let { sandbox } = require('@architect/architect')
 let tiny = require('tiny-json-http')
 
 async function update () {
@@ -13,8 +13,10 @@ async function update () {
 
   // Run locally, start sandbox if needed
   let local = process.env.ARC_LOCAL
-  let close
-  if (local && process.env.ENDPOINT.includes('localhost')) close = await sandbox()
+  let runSandbox = local && process.env.ENDPOINT.includes('localhost')
+  if (runSandbox) {
+    await sandbox.start()
+  }
 
   console.log('Pulling results from:', process.env.ENDPOINT)
 
@@ -75,7 +77,9 @@ async function update () {
   console.log(`Successfully updated ${filename.replace(process.cwd(), '')}`)
 
   // Close the local server
-  if (close) close()
+  if (runSandbox) {
+    await sandbox.end()
+  }
   console.log('Done!')
 }
 
