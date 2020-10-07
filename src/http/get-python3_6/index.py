@@ -9,4 +9,4 @@ def handler(request, context):
   result.sort()
   headers = {'content-type': 'application/json; charset=utf8'}
   body = json.dumps(result)
-  return {'headers': headers, 'body': body}
+  return {'statusCode': 200, 'headers': headers, 'body': body}
