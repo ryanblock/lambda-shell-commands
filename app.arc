@@ -6,6 +6,7 @@ region us-west-1
 profile personal
 
 @http
+get /nodejs14.x     # API: Lambda shell commands on AWS Linux 2 / Node 14
 get /nodejs12.x     # API: Lambda shell commands on AWS Linux 2 / Node 12
 get /nodejs10.x     # API: Lambda shell commands on AWS Linux 2 / Node 10
 get /python3.8      # API: Lambda shell commands on AWS Linux 2 / Python 3.8
@@ -24,3 +25,4 @@ get /ruby2.5        # API: Lambda shell commands on AWS Linux / Ruby 2.5
 
 # EOL / retired
 # get /nodejs8.10     # API: Lambda shell commands on AWS Linux / Node 8
+# get /python2.7      # API: Lambda shell commands on AWS Linux / Python 2.7

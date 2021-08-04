@@ -30,6 +30,7 @@ async function update () {
     return template
   }
   let runtimes = [
+    'nodejs14.x',
     'nodejs12.x',
     'nodejs10.x',
     'python3.8',

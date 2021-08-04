@@ -1,4 +1,4 @@
-# AWS Lambda shell commands for `nodejs12.x` runtime
+# AWS Lambda shell commands for `nodejs14.x` runtime
 ### Last updated: 2021-08-04T21:50:59.560Z from `us-west-1`
 
 ## Available AWS Lambda shell commands, shortcuts, and syntax
