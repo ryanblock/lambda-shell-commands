@@ -28,7 +28,7 @@ try {
     `git push https ${day}`
     exec(cmd)
 
-    let octokit = Octokit({
+    let octokit = new Octokit({
       auth,
       userAgent: `Lambda Shell Commands ${ver}`,
     })
