@@ -58,7 +58,7 @@ async function update () {
     results = results.join('\n')
 
     let ver = versions
-      ? `\n## Runtime version\n\n${versions.map(({ name, version }) => `**${name}**: ${version}`).join('\n')}\n`
+      ? `\n## Runtime version\n\n${versions.map(({ name, version }) => `**${name}**: ${version}`).join('\n\n')}\n`
       : ''
 
     // Write each
