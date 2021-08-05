@@ -4,7 +4,7 @@
 if (process.env.ARC_LOCAL) require('dotenv').config()
 let { execSync: exec } = require('child_process')
 let { version: ver } = require('../package.json')
-let github = require('@octokit/rest')
+let { Octokit } = require('@octokit/core')
 
 try {
   /**
@@ -28,20 +28,21 @@ try {
     `git push https ${day}`
     exec(cmd)
 
-    let gh = github({
+    let octokit = Octokit({
       auth,
       userAgent: `Lambda Shell Commands ${ver}`,
     })
-    let refs = await gh.git.listRefs({
+    let refs = await octokit.request('GET /repos/{owner}/{repo}/git/matching-refs/{ref}', {
       owner,
-      repo
+      repo,
+      ref: 'heads/'
     })
     let title = msg
     let head = refs.data.find(r => r.ref.startsWith(`refs/heads/${day}`))
     head = head.ref.replace('refs/heads/', '')
     let base = 'master'
 
-    let pull = await gh.pulls.create({
+    let pull = await octokit.request('POST /repos/{owner}/{repo}/pulls', {
       owner,
       repo,
       title,
