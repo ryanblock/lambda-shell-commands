@@ -1,2 +1,2 @@
 @aws
-runtime nodejs12.x
+runtime nodejs14.x
