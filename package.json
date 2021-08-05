@@ -6,7 +6,7 @@
     "lint": "eslint . --fix",
     "test": "npm run lint",
     "start": "NODE_ENV=testing npx sandbox",
-    "publish": "npm run update",
+    "publish": "node scripts/update.js",
     "publish:local": "ARC_LOCAL=true npm run publish"
   },
   "keywords": [
