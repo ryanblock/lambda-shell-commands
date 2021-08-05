@@ -465,11 +465,11 @@
     "versions": [
       {
         "name": "Node.js",
-        "version": "v12.22.1"
+        "version": "v12.22.3"
       },
       {
         "name": "npm",
-        "version": "6.14.12"
+        "version": "6.14.13"
       }
     ]
   },
@@ -702,7 +702,7 @@
     "versions": [
       {
         "name": "Node.js",
-        "version": "v14.17.3"
+        "version": "v14.17.1"
       },
       {
         "name": "npm",
