@@ -9,13 +9,13 @@ $LINKS
 
 ## How Lambda works
 
-AWS Lambda is a full Linux microcontainer that boots up on-demand in milliseconds, billing in 100ms increments.
+AWS Lambda is a full Linux microcontainer that boots up on-demand in milliseconds, billing in 1ms increments.
 
 Lambda is primarily used for running whatever business logic you feed one of its [supported runtimes](https://docs.aws.amazon.com/lambda/latest/dg/lambda-runtimes.html) (or the [custom runtime](https://docs.aws.amazon.com/lambda/latest/dg/runtimes-custom.html) of your choosing, if you're into that!).
 
 As in any application, it's not unusual to need to shell out for some kinds of operations – after all, UNIX is pretty powerful! 🏋🏽‍♀️
 
-Fortunately, Lambdas – which run a lightweight AWS AMI – come equipped with a full complement of common Linux shell commands.
+Fortunately, Lambdas – which run a lightweight AWS AMI – come equipped with a full complement of common Linux shell commands. But not everything, hence this project!
 
 
 ### Helpful notes
