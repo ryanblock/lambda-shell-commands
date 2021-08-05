@@ -1,5 +1,5 @@
 # AWS Lambda shell commands
-### Last updated: $LAST_UPDATED
+### Last change detected: $LAST_UPDATED
 
 
 ## Shell command lists by Lambda runtime

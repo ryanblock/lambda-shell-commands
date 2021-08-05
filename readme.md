@@ -4,14 +4,14 @@
 
 ## Shell command lists by Lambda runtime
 
-### → [`nodejs14.x`](./_nodejs14.x.md)
-### → [`nodejs12.x`](./_nodejs12.x.md)
 ### → [`nodejs10.x`](./_nodejs10.x.md)
-### → [`python3.8`](./_python3.8.md)
-### → [`python3.7`](./_python3.7.md)
+### → [`nodejs12.x`](./_nodejs12.x.md)
+### → [`nodejs14.x`](./_nodejs14.x.md)
 ### → [`python3.6`](./_python3.6.md)
-### → [`ruby2.7`](./_ruby2.7.md)
+### → [`python3.7`](./_python3.7.md)
+### → [`python3.8`](./_python3.8.md)
 ### → [`ruby2.5`](./_ruby2.5.md)
+### → [`ruby2.7`](./_ruby2.7.md)
 
 
 ## How Lambda works
