@@ -53,3 +53,4 @@ jobs:
       env:
         ENDPOINT: ${{ secrets.ENDPOINT }}
         AWS_REGION: ${{ secrets.AWS_REGION }}
+        TOKEN: ${{ secrets.TOKEN }}

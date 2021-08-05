@@ -12,7 +12,9 @@ let commit = require('./_commit')
 try {
   (async function update () {
     // Ensure you have valid process.env.ENDPOINT pointing to a live Lambda
-    if (!process.env.ENDPOINT || !process.env.AWS_REGION) throw ReferenceError('Missing env vars')
+    [ 'AWS_REGION', 'ENDPOINT', 'TOKEN' ].forEach(env => {
+      if (!process.env[env]) throw ReferenceError(`Missing ${env}`)
+    })
 
     // Run locally, start sandbox if needed
     let local = process.env.ARC_LOCAL
