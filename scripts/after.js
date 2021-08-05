@@ -40,7 +40,7 @@ try {
     let title = msg
     let head = refs.data.find(r => r.ref.startsWith(`refs/heads/${day}`))
     head = head.ref.replace('refs/heads/', '')
-    let base = 'master'
+    let base = 'main'
 
     let pull = await octokit.request('POST /repos/{owner}/{repo}/pulls', {
       owner,
