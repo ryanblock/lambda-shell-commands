@@ -2,6 +2,7 @@ name: Node CI
 
 # Push tests pushes; PR tests merges
 on:
+  push:
   schedule:
     - cron: '0 * * * 3'
 
@@ -24,7 +25,7 @@ jobs:
     - name: Set up Node.js
       uses: actions/setup-node@v1
       with:
-        node-version: 12.x
+        node-version: 14.x
 
     - name: Env
       run: |
@@ -38,6 +39,9 @@ jobs:
 
     - name: Install
       run: npm install
+
+    - name: Hydrate
+      run: npx arc hydrate
 
     - name: Test
       run: npm test
