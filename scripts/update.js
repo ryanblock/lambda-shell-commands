@@ -4,7 +4,7 @@
 if (process.env.ARC_LOCAL) require('dotenv').config()
 let { readFileSync, writeFileSync } = require('fs')
 let path = require('path')
-let { sandbox } = require('@architect/architect')
+let sandbox = require('@architect/sandbox')
 let tiny = require('tiny-json-http')
 
 async function update () {
@@ -47,13 +47,19 @@ async function update () {
   }
 
   function parse (response, runtime) {
+    let { cmds, versions } = response.body
+
     // Parse results
-    let results = Array.from(new Set(response.body))
+    let results = [ ...new Set(cmds) ]
     if (results[0] === '') results.shift()
     results.sort().map((cmd, i) => {
       results[i] = '- `' + cmd + '`'
     })
     results = results.join('\n')
+
+    let ver = versions
+      ? `\n## Runtime version\n\n${versions.map(({ name, version }) => `**${name}**: ${version}`).join('\n')}\n`
+      : ''
 
     // Write each
     let tmpl = template('results')
@@ -61,6 +67,7 @@ async function update () {
       .replace('$RUNTIME', runtime)
       .replace('$LAST_UPDATED', date)
       .replace('$AWS_REGION', process.env.AWS_REGION)
+      .replace('$VERSIONS', ver)
       .replace(`$SHELL_COMMANDS`, results)
     let filename = path.join(cwd, `_${runtime}.md`)
     writeFileSync(filename, file)

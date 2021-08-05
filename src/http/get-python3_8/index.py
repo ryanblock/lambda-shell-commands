@@ -7,4 +7,5 @@ def handler(request, context):
   result = os.popen(command).read()
   result = re.split('\n', result)
   result.sort()
-  return result
+  obj = { "cmds": result }
+  return obj
