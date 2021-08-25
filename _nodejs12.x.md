@@ -1,11 +1,11 @@
 # AWS Lambda shell commands for `nodejs12.x` runtime
-### Last change detected: `2021-08-25T17:26:08.013Z` from `us-west-1`
+### Last change detected: `2021-08-25T18:23:42.587Z` from `us-west-1`
 
 ## Runtime version
 
-**Node.js**: v12.22.4
+**Node.js**: v12.22.3
 
-**npm**: 6.14.14
+**npm**: 6.14.13
 
 ## Available AWS Lambda shell commands, shortcuts, and syntax
 
