@@ -702,11 +702,11 @@
     "versions": [
       {
         "name": "Node.js",
-        "version": "v14.17.3"
+        "version": "v14.17.4"
       },
       {
         "name": "npm",
-        "version": "6.14.13"
+        "version": "6.14.14"
       }
     ]
   },
